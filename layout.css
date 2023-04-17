@@ -3,15 +3,65 @@ html {
 }
 
 .container {
-  background-color: greenyellow;
+  background-color: #7fb858;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 3px solid black;
 }
 
-figure {
-  width: 300px;
+.container > * {
+  flex: 1 1 100%;
+  border: solid salmon 1px;
+}
+
+header figure {
+  width: 100%;
+  height: 100%;
+}
+
+header figure img {
+  width: 100%;
+  height: 100%;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  flex: 1 1 100%;
+  margin-block-end: 0.5rem;
+  background-color: #9dcd7c;
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.boxes section div svg {
+  width: 25px;
+  height: 25px;
+}
+
+/* figure {
+  width: 400px;
   height: 200px;
 }
 
 figure img {
+  width: 100%;
+  height: 100%;
+} */
+
+.vision-img {
+  width: 100px;
+  height: 70px;
+}
+
+.vision-img img {
   width: 100%;
   height: 100%;
 }
