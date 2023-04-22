@@ -7,12 +7,12 @@ html {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  border: 3px solid black;
+  border: 6px solid black;
 }
 
 .container > * {
   flex: 1 1 100%;
-  border: solid salmon 1px;
+  border: solid salmon 3px;
 }
 
 header figure {
@@ -33,30 +33,25 @@ nav ul {
 
 nav ul li {
   flex: 1 1 100%;
-  margin-block-end: 0.5rem;
   background-color: #9dcd7c;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   text-align: center;
-  padding: 1rem;
+  padding: 1.4rem;
   border-radius: 0.5rem;
+  border: solid 1px #628249;
+  color: #fefefe;
 }
 
-.boxes section div svg {
-  width: 25px;
-  height: 25px;
+.text {
+  font-size: 2rem;
+  padding: 1rem;
 }
 
-/* figure {
-  width: 400px;
-  height: 200px;
+.vision figure {
+  display: none;
 }
 
-figure img {
-  width: 100%;
-  height: 100%;
-} */
-
-.vision-img {
+/* .vision-img {
   width: 100px;
   height: 70px;
 }
@@ -64,6 +59,65 @@ figure img {
 .vision-img img {
   width: 100%;
   height: 100%;
+} */
+
+/* .boxes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.boxes > * {
+  flex: 1 1 100%;
+} */
+
+.boxes {
+  border: 3px solid #a41616;
+}
+
+.boxes section {
+  margin-block-end: 1rem;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0.8rem;
+}
+
+.boxes section > * {
+  flex: 1 1 100%;
+}
+
+.boxes section div {
+  background-color: #cbcbcb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  margin-block-end: 1rem;
+}
+
+.boxes section div h1 {
+  font-size: 1.6rem;
+  margin-inline-start: 1rem;
+}
+
+.boxes section div svg {
+  width: 20px;
+  height: 20px;
+  margin-inline-end: 1rem;
+}
+
+/* .boxes section > * {
+  flex: 1 1 100%;
+} */
+
+.specials figure img {
+  width: 100%;
+}
+
+.events figure img {
+  width: 100%;
 }
 
 footer svg {
