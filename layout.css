@@ -75,7 +75,7 @@ nav ul li {
   border: 3px solid #a41616;
 }
 
-.boxes section {
+.boxes > section {
   margin-block-end: 1rem;
   background-color: whitesmoke;
   display: flex;
@@ -84,11 +84,11 @@ nav ul li {
   padding: 0.8rem;
 }
 
-.boxes section > * {
+.boxes > section > * {
   flex: 1 1 100%;
 }
 
-.boxes section div {
+.boxes > section > div {
   background-color: #cbcbcb;
   display: flex;
   align-items: center;
@@ -228,6 +228,10 @@ footer svg {
     max-width: 50%;
   }
 
+  .news section {
+    width: 100%;
+    height: 100%;
+  }
   /* .news div {
     height: 20px;
   } */
