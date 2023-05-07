@@ -7,12 +7,10 @@ html {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  border: 6px solid black;
 }
 
 .container > * {
   flex: 1 1 100%;
-  /* border: solid salmon 3px; */
 }
 
 header figure {
@@ -40,6 +38,7 @@ nav ul li {
   border-radius: 0.5rem;
   border: solid 1px #628249;
   color: #fefefe;
+  box-shadow: 0.5px 0.5px 0.5px 0.5px rgba(16, 16, 16, 0.198);
 }
 
 .text {
@@ -49,30 +48,6 @@ nav ul li {
 
 .vision figure {
   display: none;
-}
-
-/* .vision-img {
-  width: 100px;
-  height: 70px;
-}
-
-.vision-img img {
-  width: 100%;
-  height: 100%;
-} */
-
-/* .boxes {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.boxes > * {
-  flex: 1 1 100%;
-} */
-
-.boxes {
-  border: 3px solid #a41616;
 }
 
 .boxes > section {
@@ -97,14 +72,6 @@ nav ul li {
   margin-block-end: 1rem;
 }
 
-/* .boxes .news {
-  margin-block-end: 0;
-}
-
-.boxes section .news div {
-  margin-block-end: 0;
-} */
-
 .boxes section div h1 {
   font-size: 1.6rem;
   margin-inline-start: 1rem;
@@ -116,24 +83,34 @@ nav ul li {
   margin-inline-end: 1rem;
 }
 
-/* .boxes section > * {
-  flex: 1 1 100%;
-} */
+.specials figure {
+  height: 35vh;
+}
 
 .specials figure img {
   width: 100%;
+  height: 100%;
+}
+
+.events figure {
+  height: 35vh;
 }
 
 .events figure img {
   width: 100%;
+  height: 100%;
 }
-
 table tr .td1 {
   width: 30px;
 }
 
-table tr td strong {
+table strong {
   font-weight: 900;
+  font-size: 1.3rem;
+}
+
+table p {
+  font-size: 1.3rem;
 }
 
 footer {
@@ -143,12 +120,17 @@ footer {
 
 footer .address {
   padding-block-end: 0.5rem;
+  color: white;
 }
 
 .footer-svg {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.footer-svg p {
+  color: white;
 }
 
 footer svg {
@@ -165,10 +147,11 @@ footer svg {
     margin-block-end: 1rem;
   }
   .beige {
-    background-color: bisque;
+    background-image: url("images/2wood.jpg");
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
-    /* border: 2px solid blueviolet; */
   }
 
   .beige .text {
@@ -206,7 +189,6 @@ footer svg {
   }
 
   .logo {
-    border: 2px solid yellow;
     max-width: 50%;
   }
 
@@ -223,6 +205,15 @@ footer svg {
 }
 
 @media only screen and (min-width: 769px) {
+  .container {
+    padding: 2rem;
+  }
+
+  .text p {
+    font-size: 2.5rem;
+    text-align: left;
+  }
+
   .news {
     flex: 1 1 0;
     max-width: 50%;
@@ -232,7 +223,36 @@ footer svg {
     width: 100%;
     height: 100%;
   }
-  /* .news div {
-    height: 20px;
-  } */
+
+  table tr > * {
+    padding-block-end: 1rem;
+  }
+
+  table strong {
+    font-weight: 900;
+    font-size: 1.5rem;
+  }
+
+  table p {
+    font-size: 1.5rem;
+  }
+
+  .footer-svg p {
+    font-size: 1.8rem;
+  }
+
+  footer svg {
+    width: 30px;
+    height: 30px;
+    fill: white;
+  }
+
+  footer .address {
+    font-size: 1.4rem;
+    padding-block-end: 1rem;
+  }
+
+  .phone {
+    font-size: 1.4rem;
+  }
 }
