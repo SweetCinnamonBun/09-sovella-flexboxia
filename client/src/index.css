@@ -1,0 +1,258 @@
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  background-color: #7fb858;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.container > * {
+  flex: 1 1 100%;
+}
+
+header figure {
+  width: 100%;
+  height: 100%;
+}
+
+header figure img {
+  width: 100%;
+  height: 100%;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  flex: 1 1 100%;
+  background-color: #9dcd7c;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 1.4rem;
+  border-radius: 0.5rem;
+  border: solid 1px #628249;
+  color: #fefefe;
+  box-shadow: 0.5px 0.5px 0.5px 0.5px rgba(16, 16, 16, 0.198);
+}
+
+.text {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.vision figure {
+  display: none;
+}
+
+.boxes > section {
+  margin-block-end: 1rem;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0.8rem;
+}
+
+.boxes > section > * {
+  flex: 1 1 100%;
+}
+
+.boxes > section > div {
+  background-color: #cbcbcb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  margin-block-end: 1rem;
+}
+
+.boxes section div h1 {
+  font-size: 1.6rem;
+  margin-inline-start: 1rem;
+}
+
+.boxes section div svg {
+  width: 20px;
+  height: 20px;
+  margin-inline-end: 1rem;
+}
+
+.specials figure {
+  height: 35vh;
+}
+
+.specials figure img {
+  width: 100%;
+  height: 100%;
+}
+
+.events figure {
+  height: 35vh;
+}
+
+.events figure img {
+  width: 100%;
+  height: 100%;
+}
+table tr .td1 {
+  width: 30px;
+}
+
+table strong {
+  font-weight: 900;
+  font-size: 1.3rem;
+}
+
+table p {
+  font-size: 1.3rem;
+}
+
+footer {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}
+
+footer .address {
+  padding-block-end: 0.5rem;
+  color: white;
+}
+
+.footer-svg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-svg p {
+  color: white;
+}
+
+footer svg {
+  width: 20px;
+  height: 20px;
+  fill: white;
+}
+
+@media only screen and (min-width: 427px) {
+  .vision {
+    padding: 1rem;
+    background-color: white;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+  }
+  .beige {
+    background-image: url("../src/assets/images/2wood.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .beige .text {
+    flex: 2 1 100%;
+  }
+
+  .vision figure {
+    display: block;
+    max-width: 100%;
+    background-color: white;
+  }
+
+  .vision figure img {
+    width: 100%;
+  }
+
+  .boxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .specials {
+    flex: 1 1 0;
+    max-width: 50%;
+  }
+
+  .events {
+    flex: 1 1 0;
+    max-width: 50%;
+  }
+
+  .news {
+    flex: 1 1 100%;
+  }
+
+  .logo {
+    max-width: 50%;
+  }
+
+  header figure {
+    width: 100%;
+    height: 100%;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .container {
+    padding: 2rem;
+  }
+
+  .text p {
+    font-size: 2.5rem;
+    text-align: left;
+  }
+
+  .news {
+    flex: 1 1 0;
+    max-width: 50%;
+  }
+
+  .news section {
+    width: 100%;
+    height: 100%;
+  }
+
+  table tr > * {
+    padding-block-end: 1rem;
+  }
+
+  table strong {
+    font-weight: 900;
+    font-size: 1.5rem;
+  }
+
+  table p {
+    font-size: 1.5rem;
+  }
+
+  .footer-svg p {
+    font-size: 1.8rem;
+  }
+
+  footer svg {
+    width: 30px;
+    height: 30px;
+    fill: white;
+  }
+
+  footer .address {
+    font-size: 1.4rem;
+    padding-block-end: 1rem;
+  }
+
+  .phone {
+    font-size: 1.4rem;
+  }
+}
